@@ -10,12 +10,12 @@ body {
     font-size: 12px;
 }
 
-#app {
+#root {
     height: 100%;
     width: 100%;
 }
 
-#app {
+#root {
     opacity: 1 !important;
     transition: opacity $slower;
 }

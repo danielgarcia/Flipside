@@ -1,15 +1,6 @@
-import React from "react";
-import ExampleJSPage from "./pages/ExampleJSPage";
-import ExampleTSPage from "./pages/ExampleTSPage";
-import "./css/App.css";
+import React from 'react';
+import Dashboard from './pages/Dashboard/Dashboard';
 
-function App() {
-  return (
-    <div>
-      {/* <ExampleJSPage /> */}
-      <ExampleTSPage />
-    </div>
-  );
-}
+const App: React.FC = (): JSX.Element => <Dashboard />;
 
 export default App;

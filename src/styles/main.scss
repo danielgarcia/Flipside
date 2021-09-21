@@ -1,0 +1,13 @@
+// Global Utils
+@import './utils/variables';
+
+// Resets styles to control the style base across browsers
+@import './base/reset';
+
+// Base Styles
+@import './base/global';
+
+// Application Pages
+@import '../pages/Dashboard/Dashboard';
+
+// Application Components

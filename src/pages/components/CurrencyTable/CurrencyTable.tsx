@@ -7,7 +7,7 @@ type Props = {
 };
 
 const CurrencyTable: React.FC<Props> = (props) => (
-    <table>
+    <table className="currency-table">
         <thead>
             <tr>
                 <th>Currency</th>

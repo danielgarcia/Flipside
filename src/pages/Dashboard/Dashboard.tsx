@@ -32,7 +32,6 @@ class Dashboard extends React.Component<unknown, State> {
      * @returns {Promise<void>}
      */
     async componentDidMount(): Promise<void> {
-        // Call API functions here to get data.
         const { currencies, error } = await getCurrencyTotals();
         this.setState({ currencies, error, searchedCurrencies: currencies, loading: false });
     }

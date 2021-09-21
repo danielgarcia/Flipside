@@ -9,11 +9,11 @@ type Props = {
 const CurrencyRow: React.FC<Props> = (props) => {
     const currency = props.currency.trend.map((trend) => trend.amount);
     return (
-        <tr>
+        <tr className="currency-row">
             <td>{props.currency.name}</td>
             <td>{props.currency.amount}</td>
-            <td>
-                <Sparklines data={currency} limit={5} width={100} height={20} margin={5}>
+            <td className="sparkline">
+                <Sparklines data={currency} limit={10} width={260} height={90} margin={0}>
                     <SparklinesLine color="grey" />
                 </Sparklines>
             </td>

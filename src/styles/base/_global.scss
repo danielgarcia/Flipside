@@ -33,6 +33,12 @@ body {
     box-sizing: border-box;
 }
 
+.wrapper {
+    width: 100%;
+    max-width: $site-width;
+    margin: 0 auto;
+}
+
 strong {
     font-weight: bold;
 }
@@ -49,4 +55,33 @@ h1 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+}
+
+table {
+    width: auto;
+    color: $black;
+    border-collapse: separate;
+    border-spacing: 3px 5px;
+
+    thead {
+        th {
+            background-color: $grey;
+            font-weight: bold;
+            padding: 15px;
+            color: $black;
+            font-size: 16px;
+            text-align: center;
+            user-select: none;
+        }
+    }
+
+    tbody {
+        td {
+            height: 90px;
+            text-align: left;
+            vertical-align: middle;
+            font-size: 16px;
+            padding: 0 5px;
+        }
+    }
 }

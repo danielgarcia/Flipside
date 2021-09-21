@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Currency } from '../../core/Currency';
 import { getCurrencyTotals } from '../../usecases/getCurrencyTotals';
+import CurrencyTable from '../components/CurrencyTable/CurrencyTable';
 
 interface State {
     currencies: Currency[];
@@ -41,23 +42,7 @@ class Dashboard extends React.Component<unknown, State> {
         return (
             <div className="dashboard-page">
                 <h1>Terra - Totals by Currency</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Currency</th>
-                            <th>Total Amount</th>
-                            <th>Trend</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                        </tr>
-                        {this.renderRows()}
-                    </tbody>
-                </table>
+                <CurrencyTable currencies={currencies} />
             </div>
         );
     }
